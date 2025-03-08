@@ -129,6 +129,15 @@ public class ModelManager implements Model {
     }
 
     @Override
+    public void starPerson(Person toAdd) {
+        toAdd.setStar(true);
+    }
+
+    public void unstarPerson(Person toRemove) {
+        toRemove.setStar(false);
+    }
+
+    @Override
     public boolean equals(Object other) {
         if (other == this) {
             return true;

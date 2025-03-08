@@ -24,6 +24,7 @@ public class Person {
     // Data fields
     private final Address address;
     private final Set<Tag> tags = new HashSet<>();
+    private boolean isStar;
 
     /**
      * Every field must be present and not null.
@@ -35,6 +36,7 @@ public class Person {
         this.email = email;
         this.address = address;
         this.tags.addAll(tags);
+        this.isStar = false;
     }
 
     public Name getName() {
@@ -52,6 +54,8 @@ public class Person {
     public Address getAddress() {
         return address;
     }
+
+    public boolean getStar() { return isStar;}
 
     /**
      * Returns an immutable tag set, which throws {@code UnsupportedOperationException}
@@ -114,4 +118,7 @@ public class Person {
                 .toString();
     }
 
+    public void setStar(boolean b) {
+        this.isStar = b;
+    }
 }
