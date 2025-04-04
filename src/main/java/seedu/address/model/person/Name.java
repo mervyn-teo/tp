@@ -11,7 +11,7 @@ public class Name {
 
     public static final String MESSAGE_CONSTRAINTS =
             "This is not a valid name. \n"
-                    + "Names should only contain alphanumeric characters and spaces, "
+                    + "Names should contain alphabet characters and spaces, "
                     + "and it should not be blank. "
                     + "Names can also contain special characters such as ' and -.\n"
                     + "The first character of the name must not be a whitespace.\n "

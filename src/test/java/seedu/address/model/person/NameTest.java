@@ -47,6 +47,7 @@ public class NameTest {
         assertTrue(Name.isValidName("David c/o jeffrey Tan Jr")); // with suffix
         assertTrue(Name.isValidName("David Tan @ Kementha")); // with suffix
         assertTrue(Name.isValidName("Jane D'arc")); // with suffix
+        assertTrue(Name.isValidName("Jaden-Smith")); // with suffix
     }
 
     @Test
